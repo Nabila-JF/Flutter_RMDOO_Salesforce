@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-Container IconItem(String image, String title) {
+Container IconItem(String imagePath, String title) {
   return Container(
     margin: const EdgeInsets.symmetric(horizontal: 13),
     decoration: BoxDecoration(
@@ -24,7 +24,7 @@ Container IconItem(String image, String title) {
           height: 50,
           decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/images/home/$image.png")),
+                image: AssetImage(imagePath)),
           ),
         ),
         Container(
