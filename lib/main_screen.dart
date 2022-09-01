@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rmdoo_salesforce/item/home/home_menu.dart';
-import 'package:rmdoo_salesforce/layout/background.dart';
-import 'package:rmdoo_salesforce/widgets/home/navbar.dart';
+import 'package:rmdoo_salesforce/widgets/navbar/navbar.dart';
 import 'pages/home_screen.dart';
 import 'pages/product_screen.dart';
 
@@ -36,7 +34,7 @@ class _MainScreenState extends State<MainScreen> {
         },
         defaultSelectedIndex: 0,
       ),
-      //backgroundColor: Colors.white,
+
     );
   }
 }
