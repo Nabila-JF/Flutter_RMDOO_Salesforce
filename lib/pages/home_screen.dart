@@ -36,12 +36,6 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-
-      bottomNavigationBar: navbar(
-        onChange: (val) {},
-        defaultSelectedIndex: 0,
-      ),
-      //backgroundColor: Colors.white,
     );
   }
 }

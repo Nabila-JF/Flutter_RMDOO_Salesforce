@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rmdoo_salesforce/pages/home_screen.dart';
 
+import 'main_screen.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
-      home: HomeScreen(),
+      home: MainScreen(),
     );
   }
 }
