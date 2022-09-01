@@ -29,14 +29,17 @@ class HomeIconArea extends StatelessWidget {
               child: Row(
                 children: [
                   Expanded(
-                      child: IconItem(
-                          "assets/images/home/limitcoin.png", "Credit\nLimit")),
+                    child: IconItem(
+                        "assets/images/home/limitcoin.png", "Credit\nLimit"),
+                  ),
                   Expanded(
-                      child: IconItem("assets/images/home/moneymonth.png",
-                          "Transaction\nMonthly")),
+                    child: IconItem("assets/images/home/moneymonth.png",
+                        "Transaction\nMonthly"),
+                  ),
                   Expanded(
-                      child: IconItem("assets/images/home/moneyyear.png",
-                          "Transaction\nYearly")),
+                    child: IconItem("assets/images/home/moneyyear.png",
+                        "Transaction\nYearly"),
+                  ),
                 ],
               ),
             ),
@@ -45,14 +48,17 @@ class HomeIconArea extends StatelessWidget {
               child: Row(
                 children: [
                   Expanded(
-                      child: IconItem("assets/images/home/wallet.png",
-                          "Point and\nDeposit")),
+                    child: IconItem(
+                        "assets/images/home/wallet.png", "Point and\nDeposit"),
+                  ),
                   Expanded(
-                      child: IconItem("assets/images/home/barcode-scan.png",
-                          "Barcode Stock\nChecking")),
+                    child: IconItem("assets/images/home/barcode-scan.png",
+                        "Barcode Stock\nChecking"),
+                  ),
                   Expanded(
-                      child: IconItem("assets/images/home/growth-chart.png",
-                          "Top 20 Sales\nAmount")),
+                    child: IconItem("assets/images/home/growth-chart.png",
+                        "Top 20 Sales\nAmount"),
+                  ),
                 ],
               ),
             ),
@@ -61,14 +67,17 @@ class HomeIconArea extends StatelessWidget {
               child: Row(
                 children: [
                   Expanded(
-                      child: IconItem("assets/images/home/shopping-basket.png",
-                          "top 20 Sales\nQuantity")),
+                    child: IconItem("assets/images/home/shopping-basket.png",
+                        "top 20 Sales\nQuantity"),
+                  ),
                   Expanded(
-                      child: IconItem("assets/images/home/delivery-truck.png",
-                          "Sales Shipment\nInquiry")),
+                    child: IconItem("assets/images/home/delivery-truck.png",
+                        "Sales Shipment\nInquiry"),
+                  ),
                   Expanded(
-                      child: IconItem("assets/images/home/clipboard.png",
-                          "Sales Order\nInquiry")),
+                    child: IconItem("assets/images/home/clipboard.png",
+                        "Sales Order\nInquiry"),
+                  ),
                 ],
               ),
             ),
