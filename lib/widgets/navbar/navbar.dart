@@ -67,33 +67,35 @@ class _navbar extends State<navbar> {
           _selectedIndex = index;
         });
       },
-      child: Column(
-        children: [
-          Container(
-            height: 40,
-            width: 40,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                scale: 0.5,
-                image: AssetImage("assets/images/navbar-icon/" +
-                    image +
-                    (_selectedIndex == index ? "-" : "-in") +
-                    "active.png"),
+      child: Padding(
+        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: 40,
+              width: 40,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  scale: 0.5,
+                  image: AssetImage(
+                      "assets/images/navbar-icon/$image${_selectedIndex == index ? "-" : "-in"}active.png"),
+                ),
               ),
             ),
-          ),
-          Container(
-            child: Text(
-              title,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontSize: 9,
-                  fontWeight: FontWeight.bold,
-                  color:
-                      _selectedIndex == index ? selectedColor : defaultColor),
+            Container(
+              child: Text(
+                title,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 9,
+                    fontWeight: FontWeight.bold,
+                    color:
+                        _selectedIndex == index ? selectedColor : defaultColor),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
