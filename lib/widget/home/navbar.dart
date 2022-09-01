@@ -27,7 +27,7 @@ class _navbar extends State<navbar> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.1,
+      height: MediaQuery.of(context).size.height * 0.085,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: const BorderRadius.only(
@@ -68,7 +68,6 @@ class _navbar extends State<navbar> {
         });
       },
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
             height: 40,
@@ -76,8 +75,10 @@ class _navbar extends State<navbar> {
             decoration: BoxDecoration(
               image: DecorationImage(
                 scale: 0.5,
-                image: AssetImage(
-                    "assets/images/navbar-icon/$image${_selectedIndex == index ? "-" : "-in"}active.png"),
+                image: AssetImage("assets/images/navbar-icon/" +
+                    image +
+                    (_selectedIndex == index ? "-" : "-in") +
+                    "active.png"),
               ),
             ),
           ),
