@@ -27,16 +27,20 @@ Container IconItem(String imagePath, String title) {
                 image: AssetImage(imagePath)),
           ),
         ),
-        Container(
+        const SizedBox(
           height: 2.5,
         ),
-        Text(
-          title,
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-            fontSize: 10.5,
-            fontWeight: FontWeight.bold,
-            color: Color(0xFF242F9B),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Text(
+            title,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              overflow: TextOverflow.clip,
+              fontSize: 10.5,
+              fontWeight: FontWeight.bold,
+              color: Color(0xFF242F9B),
+            ),
           ),
         ),
         Container(height: 7.5)
