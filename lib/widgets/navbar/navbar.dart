@@ -27,7 +27,7 @@ class _navbar extends State<navbar> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.085,
+      height: MediaQuery.of(context).size.height * 0.1,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: const BorderRadius.only(
@@ -67,35 +67,32 @@ class _navbar extends State<navbar> {
           _selectedIndex = index;
         });
       },
-      child: Padding(
-        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              height: 40,
-              width: 40,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  scale: 0.5,
-                  image: AssetImage(
-                      "assets/images/navbar-icon/$image${_selectedIndex == index ? "-" : "-in"}active.png"),
-                ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            height: 40,
+            width: 40,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                scale: 0.5,
+                image: AssetImage(
+                    "assets/images/navbar-icon/$image${_selectedIndex == index ? "-" : "-in"}active.png"),
               ),
             ),
-            Container(
-              child: Text(
-                title,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 9,
-                    fontWeight: FontWeight.bold,
-                    color:
-                        _selectedIndex == index ? selectedColor : defaultColor),
-              ),
+          ),
+          Container(
+            child: Text(
+              title,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 9,
+                  fontWeight: FontWeight.bold,
+                  color:
+                      _selectedIndex == index ? selectedColor : defaultColor),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
