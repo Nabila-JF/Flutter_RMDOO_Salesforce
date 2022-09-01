@@ -9,6 +9,7 @@ import 'package:rmdoo_salesforce/widgets/home/quick_info.dart';
 
 class HomeScreen extends StatelessWidget {
   int _indexPage = 0;
+
   @override
   Widget build(BuildContext context) {
     var menu;
@@ -17,25 +18,19 @@ class HomeScreen extends StatelessWidget {
         children: [
           // Background App
           const BackgroundColor(),
-
           // Widget List
-          SingleChildScrollView(
-            child: Column(
-              children: [
-                // Space from top
-                const SizedBox(
-                  height: 55,
-                ),
-
-                ProfileCard(),
-                QuickInfo(),
-                // SizedBox(height: 15),
-                // Icon Menu
-
-                iconArea(),
-
-              ],
-            ),
+          Column(
+            children: [
+              // Space from top
+              const SizedBox(
+                height: 55,
+              ),
+              ProfileCard(),
+              const QuickInfo(),
+              Expanded(
+                child: iconArea(),
+              ),
+            ],
           ),
         ],
       ),

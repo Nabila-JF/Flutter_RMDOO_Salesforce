@@ -49,6 +49,9 @@ class ProfileCard extends StatelessWidget {
                             Image.asset('assets/images/home/profile-pic.jpg')),
                   ),
                 ),
+                const SizedBox(
+                  height: 15,
+                ),
                 // Profile Name + ID
                 Column(
                   children: [

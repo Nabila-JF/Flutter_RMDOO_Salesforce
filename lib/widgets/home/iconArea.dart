@@ -4,10 +4,6 @@ class iconArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints(
-        maxWidth: MediaQuery.of(context).size.width,
-        maxHeight: MediaQuery.of(context).size.height * 0.475,
-      ),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: const BorderRadius.only(
@@ -22,60 +18,53 @@ class iconArea extends StatelessWidget {
         ],
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+
         children: [
-          Column(
+          Row(
             children: [
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.0225,
-              ),
-              Row(
-                children: [
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(child: iconHome("limitcoin", "Credit\nLimit")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child: iconHome("moneymonth", "Transaction\nMonthly")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(child: iconHome("moneyyear", "Transaction\nYearly")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                ],
-              ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.0225,
-              ),
-              Row(
-                children: [
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(child: iconHome("wallet", "Point and\nDeposit")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child:
-                          iconHome("barcode-scan", "Barcode Stock\nChecking")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child: iconHome("growth-chart", "Top 20 Sales\nAmount")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                ],
-              ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.0225,
-              ),
-              Row(
-                children: [
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child: iconHome(
-                          "shopping-basket", "top 20 Sales\nQuantity")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child: iconHome(
-                          "delivery-truck", "Sales Shipment\nInquiry")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child: iconHome("clipboard", "Sales Order\nInquiry")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                ],
-              ),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+              Expanded(child: iconHome("limitcoin", "Credit\nLimit")),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+              Expanded(
+                  child: iconHome("moneymonth", "Transaction\nMonthly")),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+              Expanded(child: iconHome("moneyyear", "Transaction\nYearly")),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+            ],
+          ),
+
+          Row(
+            children: [
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+              Expanded(child: iconHome("wallet", "Point and\nDeposit")),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+              Expanded(
+                  child:
+                      iconHome("barcode-scan", "Barcode Stock\nChecking")),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+              Expanded(
+                  child: iconHome("growth-chart", "Top 20 Sales\nAmount")),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+            ],
+          ),
+
+
+          Row(
+            children: [
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+              Expanded(
+                  child: iconHome(
+                      "shopping-basket", "top 20 Sales\nQuantity")),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+              Expanded(
+                  child: iconHome(
+                      "delivery-truck", "Sales Shipment\nInquiry")),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+              Expanded(
+                  child: iconHome("clipboard", "Sales Order\nInquiry")),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.05),
             ],
           ),
         ],
