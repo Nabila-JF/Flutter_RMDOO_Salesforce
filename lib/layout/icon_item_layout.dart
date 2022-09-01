@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 Container IconItem(String image, String title) {
   return Container(
+    margin: const EdgeInsets.symmetric(horizontal: 13),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(15),
       boxShadow: [

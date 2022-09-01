@@ -29,14 +29,13 @@ class iconArea extends StatelessWidget {
               padding: const EdgeInsets.only(top: 20),
               child: Row(
                 children: [
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+                  // SizedBox(width: MediaQuery.of(context).size.width * 0.05),
                   Expanded(child: IconItem("limitcoin", "Credit\nLimit")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child: IconItem("moneymonth", "Transaction\nMonthly")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+                  // SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+                  Expanded(child: IconItem("moneymonth", "Transaction\nMonthly")),
+                  // SizedBox(width: MediaQuery.of(context).size.width * 0.05),
                   Expanded(child: IconItem("moneyyear", "Transaction\nYearly")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+                  // SizedBox(width: MediaQuery.of(context).size.width * 0.05),
                 ],
               ),
             ),
@@ -45,16 +44,13 @@ class iconArea extends StatelessWidget {
               padding: const EdgeInsets.only(top: 20),
               child: Row(
                 children: [
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+
                   Expanded(child: IconItem("wallet", "Point and\nDeposit")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child:
-                          IconItem("barcode-scan", "Barcode Stock\nChecking")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child: IconItem("growth-chart", "Top 20 Sales\nAmount")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+
+                  Expanded(child: IconItem("barcode-scan", "Barcode Stock\nChecking")),
+
+                  Expanded(child: IconItem("growth-chart", "Top 20 Sales\nAmount")),
+
                 ],
               ),
             ),
@@ -63,18 +59,13 @@ class iconArea extends StatelessWidget {
               padding: const EdgeInsets.only(top: 20),
               child: Row(
                 children: [
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child: IconItem(
-                          "shopping-basket", "top 20 Sales\nQuantity")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child: IconItem(
-                          "delivery-truck", "Sales Shipment\nInquiry")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
-                  Expanded(
-                      child: IconItem("clipboard", "Sales Order\nInquiry")),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+
+                  Expanded(child: IconItem("shopping-basket", "top 20 Sales\nQuantity")),
+
+                  Expanded(child: IconItem("delivery-truck", "Sales Shipment\nInquiry")),
+
+                  Expanded(child: IconItem("clipboard", "Sales Order\nInquiry")),
+
                 ],
               ),
             ),
