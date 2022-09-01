@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:rmdoo_salesforce/pages/finance_screen.dart';
+import 'package:rmdoo_salesforce/pages/inventory_screen.dart';
+import 'package:rmdoo_salesforce/pages/master_screen.dart';
+import 'package:rmdoo_salesforce/pages/trading_screen.dart';
 import 'package:rmdoo_salesforce/widgets/navbar/navbar.dart';
 import 'pages/home_screen.dart';
 import 'pages/product_screen.dart';
@@ -16,6 +20,10 @@ class _MainScreenState extends State<MainScreen> {
   static final List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
     ProductScreen(),
+    TradingScreen(),
+    InventoryScreen(),
+    MasterScreen(),
+    FinanceScreen()
   ];
 
   @override
