@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:rmdoo_salesforce/item/home/home_menu.dart';
 import 'package:rmdoo_salesforce/layout/background.dart';
-import 'package:rmdoo_salesforce/widget/home/card.dart';
+import 'package:rmdoo_salesforce/widgets/home/card.dart';
 
-import 'package:rmdoo_salesforce/widget/home/navbar.dart';
-import 'package:rmdoo_salesforce/widget/home/iconArea.dart';
-import 'package:rmdoo_salesforce/widget/home/quick_info.dart';
+import 'package:rmdoo_salesforce/widgets/home/navbar.dart';
+import 'package:rmdoo_salesforce/widgets/home/iconArea.dart';
+import 'package:rmdoo_salesforce/widgets/home/quick_info.dart';
 
 class HomeScreen extends StatelessWidget {
   int _indexPage = 0;
