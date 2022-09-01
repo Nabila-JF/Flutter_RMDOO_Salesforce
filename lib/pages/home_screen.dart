@@ -19,18 +19,20 @@ class HomeScreen extends StatelessWidget {
           // Background App
           const BackgroundColor(),
           // Widget List
-          Column(
-            children: [
-              // Space from top
-              const SizedBox(
-                height: 55,
-              ),
-              ProfileCard(),
-              const QuickInfo(),
-              Expanded(
-                child: iconArea(),
-              ),
-            ],
+          SingleChildScrollView(
+            child: Column(
+              children: [
+                // Space from top
+                const SizedBox(
+                  height: 55,
+                ),
+                ProfileCard(),
+                const QuickInfo(),
+
+                iconArea(),
+
+              ],
+            ),
           ),
         ],
       ),
