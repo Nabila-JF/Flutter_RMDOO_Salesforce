@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:rmdoo_salesforce/item/icon_model.dart';
 import 'package:rmdoo_salesforce/widgets/icon_area/icon_area_list.dart';
 
-import '../../item/home/home_menu.dart';
-import '../../layout/icon_item_layout.dart';
+import '../../item/icon_area_items/trading_menu.dart';
+
+
 
 class TradingIconArea extends StatelessWidget {
   @override
@@ -24,7 +24,7 @@ class TradingIconArea extends StatelessWidget {
         ],
       ),
       child: IconAreaList(
-        iconList: homeMenuList,
+        iconList: tradingMenuList,
       ),
     );
   }

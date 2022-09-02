@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../item/home/home_menu.dart';
-import '../../layout/icon_item_layout.dart';
+import '../../item/icon_area_items/home_menu.dart';
 import '../icon_area/icon_area_list.dart';
 
 class HomeIconArea extends StatelessWidget {
