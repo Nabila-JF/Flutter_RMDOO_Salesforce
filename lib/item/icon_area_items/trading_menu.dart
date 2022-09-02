@@ -1,49 +1,94 @@
 import '../icon_model.dart';
 
 var tradingMenuList = [
-  // Credit Limit
+
   IconModel(
-    iconImagePath: 'assets/images/home/limitcoin.png',
-    iconText: 'Credit Limit',
+    iconImagePath: 'assets/images/trading/transaction-yearly.png',
+    iconText: 'Transaction Yearly',
   ),
-  // Transaction Monthly
+
   IconModel(
-    iconImagePath: 'assets/images/home/moneymonth.png',
+    iconImagePath: 'assets/images/trading/transaction-monthly.png',
     iconText: 'Transaction Monthly',
   ),
-  // transaction Yearly
+
   IconModel(
-    iconImagePath: 'assets/images/home/moneyyear.png',
-    iconText: 'transaction Yearly',
+    iconImagePath: 'assets/images/trading/point-deposit.png',
+    iconText: 'Point & Deposit',
   ),
-  // Point and Deposit
+
   IconModel(
-    iconImagePath: 'assets/images/home/wallet.png',
-    iconText: 'Point and Deposit',
+    iconImagePath: 'assets/images/trading/so-outstand-recap.png',
+    iconText: 'S / O Outstanding (R)',
   ),
-  // Barcode Stock Checking
+
   IconModel(
-    iconImagePath: 'assets/images/home/barcode-scan.png',
-    iconText: 'Barcode Stock Checking',
+    iconImagePath: 'assets/images/trading/po-outstanding.png',
+    iconText: 'P / O Outstanding',
   ),
-  // Top 20 Sales Amount
+
   IconModel(
-    iconImagePath: 'assets/images/home/growth-chart.png',
-    iconText: 'Top 20 Sales Amount',
+    iconImagePath: 'assets/images/trading/report-of-disc.png',
+    iconText: 'Report of Discount',
   ),
-  // Top 20 Sales Quantity
+
   IconModel(
-    iconImagePath: 'assets/images/home/shopping-basket.png',
-    iconText: 'Top 20 Sales Quantity',
+    iconImagePath: 'assets/images/trading/sales-ordero-outstand.png',
+    iconText: 'Sales Order Outstanding',
   ),
-  // Sales Shipment Inquiry
+
   IconModel(
-    iconImagePath: 'assets/images/home/delivery-truck.png',
+    iconImagePath: 'assets/images/trading/sales-ship-inq.png',
     iconText: 'Sales Shipment Inquiry',
   ),
-  // Sales Order Inquiry
+
   IconModel(
-    iconImagePath: 'assets/images/home/clipboard.png',
-    iconText: 'Sales Order Inquiry',
-  ),// Sales Order Inquiry
+    iconImagePath: 'assets/images/trading/summ-order.png',
+    iconText: 'Summary Order',
+  ),
+
+  IconModel(
+    iconImagePath: 'assets/images/trading/for-vs-real.png',
+    iconText: 'Forecast vs. realization',
+  ),
+
+  IconModel(
+    iconImagePath: 'assets/images/trading/purchase-acc.png',
+    iconText: 'Purchase Accumulated',
+  ),
+
+  IconModel(
+    iconImagePath: 'assets/images/trading/top-100-margin.png',
+    iconText: 'Top 100 Margin',
+  ),
+
+  IconModel(
+    iconImagePath: 'assets/images/trading/top-20-maargin.png',
+    iconText: 'Top 20 High Margin',
+  ),
+
+  IconModel(
+    iconImagePath: 'assets/images/trading/top-20-return-to-vendor.png',
+    iconText: 'Top 20 Product Return to Vendor',
+  ),
+
+  IconModel(
+    iconImagePath: 'assets/images/trading/top-20-sales-return.png',
+    iconText: 'Top 20 Sales Return',
+  ),
+
+  IconModel(
+    iconImagePath: 'assets/images/trading/top-20-quatity.png',
+    iconText: 'Top 20 Quantity',
+  ),
+
+  IconModel(
+    iconImagePath: 'assets/images/trading/top-20-amount.png',
+    iconText: 'Top 20 Amount',
+  ),
+
+  IconModel(
+    iconImagePath: 'assets/images/trading/top-20-dec-pro.png',
+    iconText: 'Top 20 Declined Product',
+  ),
 ];
