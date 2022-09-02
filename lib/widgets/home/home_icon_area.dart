@@ -6,7 +6,7 @@ class HomeIconArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.5,
+      height: MediaQuery.of(context).size.height * 0.55,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -21,8 +21,11 @@ class HomeIconArea extends StatelessWidget {
           ),
         ],
       ),
-      child: IconAreaList(
-        iconList: homeMenuList,
+      child: Container(
+        margin: const EdgeInsets.only(bottom: 40),
+        child: IconAreaList(
+          iconList: homeMenuList,
+        ),
       ),
     );
   }
