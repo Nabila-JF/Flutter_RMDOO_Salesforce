@@ -14,12 +14,14 @@ class TradingScreen extends StatelessWidget{
 
           SingleChildScrollView(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 // Space from top
-                const SizedBox(
-                  height: 55,
+
+                Padding(
+                  padding: const EdgeInsets.only(top: 65),
+                  child: TradingIconArea(),
                 ),
-                TradingIconArea(),
               ],
             ),
           ),
