@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
+import '../../item/home/home_menu.dart';
 import '../../layout/icon_item_layout.dart';
+import '../icon_area/icon_area_list.dart';
 
 class HomeIconArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.only(bottom: 50),
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -20,69 +23,8 @@ class HomeIconArea extends StatelessWidget {
           ),
         ],
       ),
-      child: Padding(
-        padding: const EdgeInsets.only(top: 20),
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: IconItem(
-                        "assets/images/home/limitcoin.png", "Credit\nLimit"),
-                  ),
-                  Expanded(
-                    child: IconItem("assets/images/home/moneymonth.png",
-                        "Transaction\nMonthly"),
-                  ),
-                  Expanded(
-                    child: IconItem("assets/images/home/moneyyear.png",
-                        "Transaction\nYearly"),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: IconItem(
-                        "assets/images/home/wallet.png", "Point and\nDeposit"),
-                  ),
-                  Expanded(
-                    child: IconItem("assets/images/home/barcode-scan.png",
-                        "Barcode Stock\nChecking"),
-                  ),
-                  Expanded(
-                    child: IconItem("assets/images/home/growth-chart.png",
-                        "Top 20 Sales\nAmount"),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: IconItem("assets/images/home/shopping-basket.png",
-                        "top 20 Sales\nQuantity"),
-                  ),
-                  Expanded(
-                    child: IconItem("assets/images/home/delivery-truck.png",
-                        "Sales Shipment\nInquiry"),
-                  ),
-                  Expanded(
-                    child: IconItem("assets/images/home/clipboard.png",
-                        "Sales Order\nInquiry"),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
+      child: IconAreaList(
+        iconList: homeMenuList,
       ),
     );
   }

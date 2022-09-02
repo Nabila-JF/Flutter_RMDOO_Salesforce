@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rmdoo_salesforce/item/icon_model.dart';
-import 'package:rmdoo_salesforce/widgets/trading/trading_icon_list.dart';
+import 'package:rmdoo_salesforce/widgets/icon_area/icon_area_list.dart';
 
+import '../../item/home/home_menu.dart';
 import '../../layout/icon_item_layout.dart';
 
 class TradingIconArea extends StatelessWidget {
@@ -22,8 +23,8 @@ class TradingIconArea extends StatelessWidget {
           ),
         ],
       ),
-      child: TradingIconList(
-        tradingIcons: homeMenuList,
+      child: IconAreaList(
+        iconList: homeMenuList,
       ),
     );
   }

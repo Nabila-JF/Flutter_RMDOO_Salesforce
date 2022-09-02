@@ -28,7 +28,9 @@ class HomeScreen extends StatelessWidget {
                 ),
                 ProfileCard(),
                 const QuickInfo(),
+
                 HomeIconArea(),
+
               ],
             ),
           ),
