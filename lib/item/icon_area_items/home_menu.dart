@@ -1,4 +1,5 @@
 
+import '../../subpages/home/credit_limit.dart';
 import '../icon_model.dart';
 
 var homeMenuList = [
@@ -6,6 +7,7 @@ var homeMenuList = [
   IconModel(
     iconImagePath: 'assets/images/home/limitcoin.png',
     iconText: 'Credit Limit',
+    route: CreditLimit()
   ),
   // Transaction Monthly
   IconModel(
