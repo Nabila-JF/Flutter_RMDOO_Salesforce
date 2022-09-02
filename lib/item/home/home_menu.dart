@@ -47,8 +47,4 @@ var homeMenuList = [
     iconImagePath: 'assets/images/home/clipboard.png',
     iconText: 'Sales Order Inquiry',
   ),// Sales Order Inquiry
-  IconModel(
-    iconImagePath: 'assets/images/home/clipboard.png',
-    iconText: 'Sales Order Inquiry',
-  ),
 ];

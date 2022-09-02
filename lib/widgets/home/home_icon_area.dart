@@ -8,8 +8,8 @@ class HomeIconArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(bottom: 50),
-      height: MediaQuery.of(context).size.height,
+      height: MediaQuery.of(context).size.height * 0.5,
+      width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: const BorderRadius.only(
