@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rmdoo_salesforce/layout/background.dart';
-import 'package:rmdoo_salesforce/widgets/home/card.dart';
+import 'package:rmdoo_salesforce/widgets/home/profile_card.dart';
 import 'package:rmdoo_salesforce/widgets/home/home_icon_area.dart';
 import 'package:rmdoo_salesforce/widgets/home/quick_info.dart';
 
