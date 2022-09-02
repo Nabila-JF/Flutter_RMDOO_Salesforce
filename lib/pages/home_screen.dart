@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rmdoo_salesforce/item/home/home_menu.dart';
 import 'package:rmdoo_salesforce/layout/background.dart';
 import 'package:rmdoo_salesforce/widgets/home/card.dart';
-
-import 'package:rmdoo_salesforce/widgets/navbar/navbar.dart';
-import 'package:rmdoo_salesforce/widgets/home/iconArea.dart';
+import 'package:rmdoo_salesforce/widgets/home/home_icon_area.dart';
 import 'package:rmdoo_salesforce/widgets/home/quick_info.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -29,8 +26,7 @@ class HomeScreen extends StatelessWidget {
                 ProfileCard(),
                 const QuickInfo(),
 
-                iconArea(),
-
+                HomeIconArea(),
               ],
             ),
           ),
