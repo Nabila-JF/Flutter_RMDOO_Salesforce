@@ -17,7 +17,7 @@ class CreditLimit extends StatelessWidget {
           const BackgroundColor(),
           Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 //coin card
                 GeneralCard(
@@ -75,7 +75,7 @@ class CreditLimit extends StatelessWidget {
 
                 //card card
                 GeneralCard(
-                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  padding: const EdgeInsets.symmetric(vertical: 20),
                   content: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -120,11 +120,6 @@ class CreditLimit extends StatelessWidget {
                       ),
                     ],
                   ),
-                ),
-
-                //GAP
-                const SizedBox(
-                  height: 20,
                 ),
               ],
             ),
