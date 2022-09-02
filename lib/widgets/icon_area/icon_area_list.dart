@@ -17,10 +17,13 @@ class IconAreaList extends StatelessWidget {
         children: iconList.map((icon) {
           return InkWell(
             onTap: () {
-              // Navigator.push(context, MaterialPageRoute(builder: (context) {
-              //   return icon.route;
-              // }));
-              //do something when the icon is clicked here
+              //handling when the item is clicked
+              if(icon.route != null) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => icon.route),
+                );
+              }
             },
             child: IconItem(icon.iconImagePath, icon.iconText),
           );
