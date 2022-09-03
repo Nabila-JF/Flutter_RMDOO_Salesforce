@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rmdoo_salesforce/subpages/home/data/transaction_monthly_data_table.dart';
 import 'package:rmdoo_salesforce/widgets/cards/general_card.dart';
 
 import '../../layout/background.dart';
@@ -13,11 +14,15 @@ class TransactionMonthly extends StatelessWidget {
       body: Stack(
         children: [
           const BackgroundColor(),
-          SafeArea(
-            child: Center(
+          SingleChildScrollView(
+            child: SafeArea(
               child: GeneralCard(
-                padding: EdgeInsets.all(4),
-                content: Text("PPP"),
+                height: MediaQuery.of(context).size.height,
+                defaultWidth: MediaQuery.of(context).size.width,
+                padding: EdgeInsets.all(12),
+                content: Expanded(
+                  child: TransactionMonthlyDataTable(),
+                ),
               ),
             ),
           ),
