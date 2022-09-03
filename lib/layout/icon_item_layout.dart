@@ -8,7 +8,6 @@ class IconItem extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
