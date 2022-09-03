@@ -1,14 +1,12 @@
-
 import '../../subpages/home/credit_limit.dart';
 import '../icon_model.dart';
 
 var homeMenuList = [
   // Credit Limit
   IconModel(
-    iconImagePath: 'assets/images/home/limitcoin.png',
-    iconText: 'Credit Limit',
-    route: CreditLimit()
-  ),
+      iconImagePath: 'assets/images/home/limitcoin.png',
+      iconText: 'Credit Limit',
+      route: CreditLimit()),
   // Transaction Monthly
   IconModel(
     iconImagePath: 'assets/images/home/moneymonth.png',
@@ -48,5 +46,5 @@ var homeMenuList = [
   IconModel(
     iconImagePath: 'assets/images/home/clipboard.png',
     iconText: 'Sales Order Inquiry',
-  ),// Sales Order Inquiry
+  ), // Sales Order Inquiry
 ];

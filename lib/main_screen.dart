@@ -8,7 +8,6 @@ import 'pages/home_screen.dart';
 import 'pages/product_screen.dart';
 
 class MainScreen extends StatefulWidget {
-
   MainScreen({super.key});
 
   @override
@@ -30,10 +29,11 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     var menu;
     return Scaffold(
-      body: Center(
-        child: _widgetOptions.elementAt(_indexPage),
+      body: Container(
+        child: Center(
+          child: _widgetOptions.elementAt(_indexPage),
+        ),
       ),
-
       bottomNavigationBar: navbar(
         onChange: (val) {
           setState(() {
@@ -42,8 +42,6 @@ class _MainScreenState extends State<MainScreen> {
         },
         defaultSelectedIndex: 0,
       ),
-
     );
   }
 }
-

@@ -10,25 +10,23 @@ class IconAreaList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scrollbar(
-      child: GridView.count(
-        crossAxisCount: 3,
-        scrollDirection: Axis.vertical,
-        children: iconList.map((icon) {
-          return InkWell(
-            onTap: () {
-              //handling when the item is clicked
-              if(icon.route != null) {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => icon.route),
-                );
-              }
-            },
-            child: IconItem(icon.iconImagePath, icon.iconText),
-          );
-        }).toList(),
-      ),
+    return GridView.count(
+      crossAxisCount: 3,
+      scrollDirection: Axis.vertical,
+      children: iconList.map((icon) {
+        return InkWell(
+          onTap: () {
+            //handling when the item is clicked
+            if (icon.route != null) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => icon.route),
+              );
+            }
+          },
+          child: IconItem(icon.iconImagePath, icon.iconText),
+        );
+      }).toList(),
     );
   }
 }
