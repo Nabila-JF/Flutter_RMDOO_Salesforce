@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class IconItem extends StatelessWidget{
+class IconItem extends StatelessWidget {
   String imagePath;
   String title;
 
@@ -9,6 +9,7 @@ class IconItem extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         boxShadow: [
@@ -48,7 +49,6 @@ class IconItem extends StatelessWidget{
       ),
     );
   }
-
 }
 // Container IconItem(String imagePath, String title) {
 //
