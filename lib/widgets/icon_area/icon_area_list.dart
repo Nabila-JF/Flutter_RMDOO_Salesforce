@@ -24,7 +24,7 @@ class IconAreaList extends StatelessWidget {
               );
             }
           },
-          child: IconItem(icon.iconImagePath, icon.iconText),
+          child:IconItem(imagePath: icon.iconImagePath, title: icon.iconText)// IconItem( icon.iconImagePath, icon.iconText),
         );
       }).toList(),
     );

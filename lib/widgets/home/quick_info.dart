@@ -7,7 +7,7 @@ class QuickInfo extends StatelessWidget{
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 20, 0, 15),
+        padding: const EdgeInsets.fromLTRB(0, 26, 0, 20),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [

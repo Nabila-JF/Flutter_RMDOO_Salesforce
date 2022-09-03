@@ -9,29 +9,28 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
+      return Stack(
         alignment: Alignment.topCenter,
         children: [
           // Background App
           const BackgroundColor(),
           // Widget List
           SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                // Space from top
-                const SizedBox(
-                  height: 45,
-                ),
-                ProfileCard(),
-                const QuickInfo(),
-                HomeIconArea(),
-              ],
+            child: SafeArea(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical:15),
+                    child: ProfileCard(),
+                  ),
+                  const QuickInfo(),
+                  HomeIconArea(),
+                ],
+              ),
             ),
           ),
         ],
-      ),
-    );
+      );
   }
 }
