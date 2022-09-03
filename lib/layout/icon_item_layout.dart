@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 Container IconItem(String imagePath, String title) {
   return Container(
-    margin: const EdgeInsets.symmetric(horizontal: 13, vertical: 10),
+    margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 13),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(15),
       boxShadow: [
@@ -18,31 +19,25 @@ Container IconItem(String imagePath, String title) {
       ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
     ),
     child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 8.0),
+          child: Image.asset(imagePath, height: 50, width: 50),
+        ),
 
-        Container(
-          height: 50,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage(imagePath)),
+        Text(
+          title,
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            overflow: TextOverflow.clip,
+            fontSize: 10.5,
+            fontWeight: FontWeight.bold,
+            color: Color(0xFF242F9B),
           ),
         ),
 
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Text(
-            title,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              overflow: TextOverflow.clip,
-              fontSize: 10.5,
-              fontWeight: FontWeight.bold,
-              color: Color(0xFF242F9B),
-            ),
-          ),
-        ),
-        Container(height: 7.5)
+        // Container(height: 7.5)
       ],
     ),
   );
