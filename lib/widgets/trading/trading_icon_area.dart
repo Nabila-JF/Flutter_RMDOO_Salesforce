@@ -9,7 +9,7 @@ class TradingIconArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(bottom: 20),
+      padding: const EdgeInsets.only(bottom: 20, top: 6),
       height: MediaQuery.of(context).size.height * 0.84,
       decoration: BoxDecoration(
         color: Colors.white,
