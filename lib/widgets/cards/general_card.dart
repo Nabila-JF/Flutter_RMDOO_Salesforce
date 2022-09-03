@@ -3,17 +3,24 @@ import 'package:flutter/material.dart';
 class GeneralCard extends StatelessWidget {
   Widget content;
   EdgeInsets padding;
+  double height;
+  double defaultWidth;
 
   GeneralCard({
     super.key,
+    this.height = 0,
+    this.defaultWidth = 0,
     required this.padding,
-    required this.content});
+    required this.content,
+  });
 
   @override
   Widget build(BuildContext context) {
+    defaultWidth == 0? MediaQuery.of(context).size.width * 0.90 : defaultWidth;
     return Center(
       child: Container(
-        width: MediaQuery.of(context).size.width * 0.90,
+        width: defaultWidth,
+        height: height == 0 ? defaultWidth : height,
         padding: padding,
         decoration: BoxDecoration(
           borderRadius: const BorderRadius.all(
