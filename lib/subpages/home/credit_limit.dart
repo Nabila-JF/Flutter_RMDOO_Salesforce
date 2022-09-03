@@ -15,118 +15,120 @@ class CreditLimit extends StatelessWidget {
       body: Stack(
         children: [
           const BackgroundColor(),
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                //coin card
-                GeneralCard(
-                  defaultWidth: 330,
-                  padding: const EdgeInsets.symmetric(vertical: 20),
-                  content: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      // Picture
-                      Center(
-                        child: Image.asset('assets/images/home/coin.png'),
-                      ),
+          SafeArea(
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  //coin card
+                  GeneralCard(
+                    defaultWidth: 330,
+                    padding: const EdgeInsets.symmetric(vertical: 20),
+                    content: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        // Picture
+                        Center(
+                          child: Image.asset('assets/images/home/coin.png'),
+                        ),
 
-                      // Texts
-                      Column(
-                        children: [
-                          Row(
-                            children: const [
-                              Expanded(
-                                child: Text(
-                                  'Credit Limit',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: Color(0xFF242F9B),
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
+                        // Texts
+                        Column(
+                          children: [
+                            Row(
+                              children: const [
+                                Expanded(
+                                  child: Text(
+                                    'Credit Limit',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: Color(0xFF242F9B),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: const [
-                              Expanded(
-                                child: Text(
-                                  'Rp. 0',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: Color(0xFF242F9B),
-                                    fontSize: 14,
+                              ],
+                            ),
+                            Row(
+                              children: const [
+                                Expanded(
+                                  child: Text(
+                                    'Rp. 0',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: Color(0xFF242F9B),
+                                      fontSize: 14,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    ],
+                              ],
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
-                ),
 
-                //GAP
-                const SizedBox(
-                  height: 20,
-                ),
-
-                //card card
-                GeneralCard(
-                  defaultWidth: 330,
-                  padding: const EdgeInsets.symmetric(vertical: 20),
-                  content: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      // Picture
-                      Center(
-                        child: Image.asset('assets/images/home/card-icon.png'),
-                      ),
-
-                      // Texts
-                      Column(
-                        children: [
-                          Row(
-                            children: const [
-                              Expanded(
-                                child: Text(
-                                  'Credit Limit',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: Color(0xFF242F9B),
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: const [
-                              Expanded(
-                                child: Text(
-                                  'Rp. 0',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: Color(0xFF242F9B),
-                                    fontSize: 14,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    ],
+                  //GAP
+                  const SizedBox(
+                    height: 20,
                   ),
-                ),
-                const SizedBox(
-                  height: 25,
-                ),
-              ],
+
+                  //card card
+                  GeneralCard(
+                    defaultWidth: 330,
+                    padding: const EdgeInsets.symmetric(vertical: 20),
+                    content: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        // Picture
+                        Center(
+                          child: Image.asset('assets/images/home/card-icon.png'),
+                        ),
+
+                        // Texts
+                        Column(
+                          children: [
+                            Row(
+                              children: const [
+                                Expanded(
+                                  child: Text(
+                                    'Credit Limit',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: Color(0xFF242F9B),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: const [
+                                Expanded(
+                                  child: Text(
+                                    'Rp. 0',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: Color(0xFF242F9B),
+                                      fontSize: 14,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 25,
+                  ),
+                ],
+              ),
             ),
           )
         ],

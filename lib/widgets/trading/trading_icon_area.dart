@@ -3,8 +3,6 @@ import 'package:rmdoo_salesforce/widgets/icon_area/icon_area_list.dart';
 
 import '../../item/icon_area_items/trading_menu.dart';
 
-
-
 class TradingIconArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
