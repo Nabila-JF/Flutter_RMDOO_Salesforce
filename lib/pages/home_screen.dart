@@ -5,11 +5,12 @@ import 'package:rmdoo_salesforce/widgets/home/home_icon_area.dart';
 import 'package:rmdoo_salesforce/widgets/home/quick_info.dart';
 
 class HomeScreen extends StatelessWidget {
-  int _indexPage = 0;
+  const HomeScreen({super.key});
+
+
 
   @override
   Widget build(BuildContext context) {
-    var menu;
     return Scaffold(
       body: Stack(
         children: [
