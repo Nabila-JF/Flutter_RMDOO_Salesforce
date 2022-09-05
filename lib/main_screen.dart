@@ -42,6 +42,7 @@ class _MainScreenState extends State<MainScreen> {
         },
         defaultSelectedIndex: 0,
       ),
+      backgroundColor: Colors.white,
     );
   }
 }

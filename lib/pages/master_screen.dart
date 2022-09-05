@@ -6,27 +6,25 @@ import '../layout/background.dart';
 class MasterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          // Background App
-          const BackgroundColor(),
+    return Stack(
+      children: [
+        // Background App
+        const BackgroundColor(),
 
-          SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                // Space from top
+        SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: const [
+              // Space from top
 
-                Padding(
-                  padding: const EdgeInsets.only(top: 65),
-                  child: MasterIconArea(),
-                ),
-              ],
-            ),
+              Padding(
+                padding: EdgeInsets.only(top: 65),
+                child: MasterIconArea(),
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
