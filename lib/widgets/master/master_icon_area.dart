@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
-import '../../item/icon_area_items/home_menu.dart';
-import '../icon_area/icon_area_list.dart';
+import 'package:rmdoo_salesforce/widgets/icon_area/icon_area_list.dart';
 
-class HomeIconArea extends StatelessWidget {
-  const HomeIconArea({super.key});
+import '../../item/icon_area_items/master_menu.dart';
 
+class MasterIconArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(bottom: 4, top: 4),
-      height: MediaQuery.of(context).size.height * 0.55,
-      width: MediaQuery.of(context).size.width,
+      padding: const EdgeInsets.only(bottom: 20, top: 6),
+      height: MediaQuery.of(context).size.height * 0.84,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(20),
-          topRight: Radius.circular(20),
-        ),
+            topLeft: Radius.circular(20), topRight: Radius.circular(20)),
         boxShadow: [
           BoxShadow(
             color: const Color(0xFF242F9B).withOpacity(0.15),
@@ -27,7 +23,7 @@ class HomeIconArea extends StatelessWidget {
         ],
       ),
       child: IconAreaList(
-        iconList: homeMenuList,
+        iconList: masterMenuList,
       ),
     );
   }

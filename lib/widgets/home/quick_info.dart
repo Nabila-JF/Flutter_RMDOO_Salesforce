@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 
-class QuickInfo extends StatelessWidget{
+class QuickInfo extends StatelessWidget {
   const QuickInfo({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 26, 0, 20),
+        padding: const EdgeInsets.fromLTRB(0, 0, 0, 15),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Column(
-
               children: const [
                 Text(
                   'Last Transaction',
@@ -31,10 +30,8 @@ class QuickInfo extends StatelessWidget{
                     fontSize: 14,
                   ),
                 ),
-
               ],
             ),
-
             Column(
               children: const [
                 Text(
@@ -56,7 +53,6 @@ class QuickInfo extends StatelessWidget{
                 ),
               ],
             ),
-
             Column(
               children: const [
                 Text(
@@ -83,5 +79,4 @@ class QuickInfo extends StatelessWidget{
       ),
     );
   }
-  
 }

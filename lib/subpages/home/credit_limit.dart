@@ -18,11 +18,11 @@ class CreditLimit extends StatelessWidget {
           SafeArea(
             child: Center(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   //coin card
                   GeneralCard(
-                    defaultWidth: 330,
+                    defaultWidth: MediaQuery.of(context).size.width * 0.85,
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     content: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -77,14 +77,15 @@ class CreditLimit extends StatelessWidget {
 
                   //card card
                   GeneralCard(
-                    defaultWidth: 330,
+                    defaultWidth: MediaQuery.of(context).size.width * 0.85,
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     content: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         // Picture
                         Center(
-                          child: Image.asset('assets/images/home/card-icon.png'),
+                          child:
+                              Image.asset('assets/images/home/card-icon.png'),
                         ),
 
                         // Texts
@@ -123,9 +124,6 @@ class CreditLimit extends StatelessWidget {
                         ),
                       ],
                     ),
-                  ),
-                  const SizedBox(
-                    height: 25,
                   ),
                 ],
               ),
