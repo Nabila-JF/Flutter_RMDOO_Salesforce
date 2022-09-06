@@ -19,8 +19,8 @@ class MasterScreen extends StatelessWidget {
 
               Padding(
                 padding: EdgeInsets.only(top: 65),
-                child: MasterIconArea(),
               ),
+              MasterIconArea(),
             ],
           ),
         ),

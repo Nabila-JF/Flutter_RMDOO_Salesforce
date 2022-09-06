@@ -63,6 +63,8 @@ flutter:
    - assets/images/navbar-icon/
    - assets/images/trading/
    - assets/images/master/
+   - assets/images/inventory/
+   - assets/images/finance/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
