@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import '../icon_area/icon_area_list.dart';
 
-import '../../item/icon_area_items/master_menu.dart';
+import '../../item/icon_area_items/finance_menu.dart';
 
-class MasterIconArea extends StatelessWidget {
-  const MasterIconArea({super.key});
+class FinanceIconArea extends StatelessWidget {
+  const FinanceIconArea({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class MasterIconArea extends StatelessWidget {
         ],
       ),
       child: IconAreaList(
-        iconList: masterMenuList,
+        iconList: financeMenuList,
       ),
     );
   }

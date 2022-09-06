@@ -8,22 +8,8 @@ class MasterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // Background App
-        const BackgroundColor(),
-
-        SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: const [
-              // Space from top
-
-              Padding(
-                padding: EdgeInsets.only(top: 65),
-              ),
-              MasterIconArea(),
-            ],
-          ),
-        ),
+        BackgroundColor(),
+        SafeArea(child: MasterIconArea()),
       ],
     );
   }
