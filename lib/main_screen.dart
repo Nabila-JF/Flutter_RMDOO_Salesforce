@@ -8,7 +8,7 @@ import 'pages/home_screen.dart';
 import 'pages/product_screen.dart';
 
 class MainScreen extends StatefulWidget {
-  MainScreen({super.key});
+  const MainScreen({super.key});
 
   @override
   State<MainScreen> createState() => _MainScreenState();
@@ -17,22 +17,19 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int _indexPage = 0;
   static final List<Widget> _widgetOptions = <Widget>[
-    HomeScreen(),
-    ProductScreen(),
-    TradingScreen(),
-    InventoryScreen(),
-    MasterScreen(),
-    FinanceScreen()
+    const HomeScreen(),
+    const ProductScreen(),
+    const TradingScreen(),
+    const InventoryScreen(),
+    const MasterScreen(),
+    const FinanceScreen()
   ];
 
   @override
   Widget build(BuildContext context) {
-    var menu;
     return Scaffold(
-      body: Container(
-        child: Center(
-          child: _widgetOptions.elementAt(_indexPage),
-        ),
+      body: Center(
+        child: _widgetOptions.elementAt(_indexPage),
       ),
       bottomNavigationBar: navbar(
         onChange: (val) {

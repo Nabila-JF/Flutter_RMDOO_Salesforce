@@ -8,13 +8,13 @@ var homeMenuList = [
   IconModel(
     iconImagePath: 'assets/images/home/limitcoin.png',
     iconText: 'Credit Limit',
-    route: CreditLimit(),
+    route: const CreditLimit(),
   ),
   // Transaction Monthly
   IconModel(
     iconImagePath: 'assets/images/home/moneymonth.png',
     iconText: 'Transaction Monthly',
-    route: TransactionMonthly(),
+    route: const TransactionMonthly(),
   ),
   // transaction Yearly
   IconModel(

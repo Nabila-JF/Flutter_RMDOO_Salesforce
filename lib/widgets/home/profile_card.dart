@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ProfileCard extends StatelessWidget {
+  const ProfileCard({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -14,10 +16,10 @@ class ProfileCard extends StatelessWidget {
           color: Colors.white.withOpacity(0.75),
           boxShadow: [
             BoxShadow(
-              color: Color(0xFF242F9B).withOpacity(0.25),
+              color: const Color(0xFF242F9B).withOpacity(0.25),
               spreadRadius: 1,
               blurRadius: 10,
-              offset: Offset(0, 0), // changes position of shadow
+              offset: const Offset(0, 0), // changes position of shadow
             ),
           ],
         ),

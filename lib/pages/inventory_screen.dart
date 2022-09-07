@@ -1,10 +1,18 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:rmdoo_salesforce/widgets/inventory/inventory_icon_area.dart';
 
-class InventoryScreen extends StatelessWidget{
+import '../layout/background.dart';
+
+class InventoryScreen extends StatelessWidget {
+  const InventoryScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('Inventory Screen'),
+    return Stack(
+      children: const [
+        BackgroundColor(),
+        SafeArea(child: InventoryIconArea()),
+      ],
     );
   }
 }

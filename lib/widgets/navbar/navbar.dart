@@ -1,29 +1,34 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class navbar extends StatefulWidget {
   final int defaultSelectedIndex;
   final Function(int) onChange;
 
+  // ignore: prefer_const_constructors_in_immutables, use_key_in_widget_constructors
   navbar({this.defaultSelectedIndex = 0, required this.onChange});
 
   @override
   State<navbar> createState() => _navbar();
 }
 
+// ignore: camel_case_types
 class _navbar extends State<navbar> {
   int _selectedIndex = 0;
 
-  var defaultColor = Color(0xFFaaaaaa);
-  var selectedColor = Color(0xFF242F9B);
+  var defaultColor = const Color(0xFFaaaaaa);
+  var selectedColor = const Color(0xFF242F9B);
 
   @override
   void initState() {
+    // ignore: todo
     // TODO: implement initState
     super.initState();
 
     _selectedIndex = widget.defaultSelectedIndex;
   }
 
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
@@ -36,7 +41,7 @@ class _navbar extends State<navbar> {
         ),
         boxShadow: [
           BoxShadow(
-            color: Color(0xFF242F9B).withOpacity(0.15),
+            color: const Color(0xFF242F9B).withOpacity(0.15),
             spreadRadius: 1,
             blurRadius: 10,
             offset: const Offset(0, 0), // changes position of shadow
@@ -81,16 +86,13 @@ class _navbar extends State<navbar> {
               ),
             ),
           ),
-          Container(
-            child: Text(
-              title,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontSize: 9,
-                  fontWeight: FontWeight.bold,
-                  color:
-                      _selectedIndex == index ? selectedColor : defaultColor),
-            ),
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: 9,
+                fontWeight: FontWeight.bold,
+                color: _selectedIndex == index ? selectedColor : defaultColor),
           ),
         ],
       ),

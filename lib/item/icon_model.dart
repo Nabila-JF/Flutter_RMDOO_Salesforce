@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
-
 class IconModel {
   String iconImagePath;
   String iconText;
+  // ignore: prefer_typing_uninitialized_variables
   var route;
 
   IconModel({
@@ -11,4 +10,3 @@ class IconModel {
     this.route,
   });
 }
-

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class GeneralCard extends StatelessWidget {
   Widget content;
   EdgeInsets padding;
@@ -16,7 +17,7 @@ class GeneralCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    defaultWidth == 0? MediaQuery.of(context).size.width * 0.90 : defaultWidth;
+    defaultWidth == 0 ? MediaQuery.of(context).size.width * 0.90 : defaultWidth;
     return Center(
       child: Container(
         width: defaultWidth,
@@ -29,10 +30,10 @@ class GeneralCard extends StatelessWidget {
           color: Colors.white.withOpacity(0.75),
           boxShadow: [
             BoxShadow(
-              color: Color(0xFF242F9B).withOpacity(0.25),
+              color: const Color(0xFF242F9B).withOpacity(0.25),
               spreadRadius: 1,
               blurRadius: 10,
-              offset: Offset(0, 0), // changes position of shadow
+              offset: const Offset(0, 0), // changes position of shadow
             ),
           ],
         ),

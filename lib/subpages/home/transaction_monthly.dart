@@ -6,6 +6,8 @@ import '../../layout/background.dart';
 import '../../widgets/appbar/default_subpages_appbar.dart';
 
 class TransactionMonthly extends StatelessWidget {
+  const TransactionMonthly({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +21,7 @@ class TransactionMonthly extends StatelessWidget {
               child: GeneralCard(
                 height: MediaQuery.of(context).size.height,
                 defaultWidth: MediaQuery.of(context).size.width,
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 content: Expanded(
                   child: TransactionMonthlyDataTable(),
                 ),

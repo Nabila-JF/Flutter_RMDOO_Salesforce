@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 Container navbarInactIcon(String image, String title) {
+  // ignore: avoid_unnecessary_containers
   return Container(
     child: Column(
       children: [
@@ -14,19 +15,18 @@ Container navbarInactIcon(String image, String title) {
             image: DecorationImage(
               scale: 0.5,
               image: AssetImage(
+                  // ignore: prefer_interpolation_to_compose_strings
                   "assets/images/navbar-icon/" + image + "-inactive.png"),
             ),
           ),
         ),
-        Container(
-          child: Text(
-            title,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                fontSize: 9,
-                fontWeight: FontWeight.bold,
-                color: Color(0xFFAAAAAA)),
-          ),
+        Text(
+          title,
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+              fontSize: 9,
+              fontWeight: FontWeight.bold,
+              color: Color(0xFFAAAAAA)),
         ),
       ],
     ),
