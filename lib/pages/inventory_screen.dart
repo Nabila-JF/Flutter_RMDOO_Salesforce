@@ -11,7 +11,7 @@ class InventoryScreen extends StatelessWidget {
     return Stack(
       children: const [
         BackgroundColor(),
-        SafeArea(child: InventoryIconArea()),
+        SafeArea(child: SingleChildScrollView(child: InventoryIconArea())),
       ],
     );
   }

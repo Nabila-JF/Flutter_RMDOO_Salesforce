@@ -9,8 +9,8 @@ class FinanceIconArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(bottom: 4, top: 4),
-      height: MediaQuery.of(context).size.height,
+      padding: const EdgeInsets.only(bottom: 20, top: 4),
+      height: MediaQuery.of(context).size.height * 0.88,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Colors.white,

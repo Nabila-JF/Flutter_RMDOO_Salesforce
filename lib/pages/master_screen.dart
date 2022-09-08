@@ -11,7 +11,7 @@ class MasterScreen extends StatelessWidget {
     return Stack(
       children: const [
         BackgroundColor(),
-        SafeArea(child: MasterIconArea()),
+        SafeArea(child: SingleChildScrollView(child: MasterIconArea())),
       ],
     );
   }
