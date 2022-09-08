@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class DefaultSubPagesAppBar extends StatelessWidget with PreferredSizeWidget {
   String pageTitle;
-  String pageSubtittle = "";
+   var pageSubtittle;
 
-  DefaultSubPagesAppBar({super.key, required this.pageTitle});
+  DefaultSubPagesAppBar({super.key, required this.pageTitle, this.pageSubtittle});
 
   @override
   Widget build(BuildContext context) {

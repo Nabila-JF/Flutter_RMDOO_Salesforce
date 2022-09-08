@@ -12,7 +12,7 @@ class TransactionMonthly extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: DefaultSubPagesAppBar(pageTitle: "Credit Limit"),
+      appBar: DefaultSubPagesAppBar(pageTitle: "Transaction", pageSubtittle: "Monthly",),
       body: Stack(
         children: [
           const BackgroundColor(),
