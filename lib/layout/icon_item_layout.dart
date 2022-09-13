@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -34,7 +35,7 @@ class IconItem extends StatelessWidget {
             child: Image.asset(imagePath, height: 50, width: 50),
           ),
 
-          Text(
+          AutoSizeText(
             title,
             textAlign: TextAlign.center,
             style: const TextStyle(
@@ -43,6 +44,9 @@ class IconItem extends StatelessWidget {
               fontWeight: FontWeight.bold,
               color: Color(0xFF242F9B),
             ),
+            maxLines: 2,
+            minFontSize: 8,
+            overflow: TextOverflow.ellipsis,
           ),
 
           // Container(height: 7.5)
