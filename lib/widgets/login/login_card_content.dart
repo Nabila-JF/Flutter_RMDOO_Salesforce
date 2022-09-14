@@ -13,8 +13,8 @@ class LoginCardContent extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
-            AutoSizeText(
+          children: [
+            const AutoSizeText(
               "Hello.",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -22,7 +22,7 @@ class LoginCardContent extends StatelessWidget {
                 color: Color(0xFF242F9B),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(bottom: 30),
               child: AutoSizeText(
                 "Welcome to login page!",
@@ -32,9 +32,32 @@ class LoginCardContent extends StatelessWidget {
                 ),
               ),
             ),
-            InputTextField(),
-            InputTextField(),
-            LoginButton(),
+            const InputTextField(),
+            const InputTextField(),
+            const LoginButton(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                AutoSizeText(
+                  'Don\'t have an account?',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Color(0xFF242F9B),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 2.5),
+                  child: AutoSizeText(
+                    'Register here',
+                    style: TextStyle(
+                        decoration: TextDecoration.underline,
+                        fontSize: 14,
+                        color: Color(0xFF242F9B),
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),

@@ -6,6 +6,7 @@ class LoginButton extends StatefulWidget {
   const LoginButton({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _LoginButton createState() => _LoginButton();
 }
 
