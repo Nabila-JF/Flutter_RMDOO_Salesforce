@@ -11,7 +11,8 @@ class CreditLimit extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: DefaultSubPagesAppBar(pageTitle: "Credit Limit"),
+      appBar:
+          DefaultSubPagesAppBar(pageTitle: "Credit Limit", pageSubtittle: ""),
       body: Stack(
         children: [
           const BackgroundColor(),

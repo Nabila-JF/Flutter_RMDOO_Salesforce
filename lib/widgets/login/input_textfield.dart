@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class InputTextField extends StatefulWidget {
-  const InputTextField({super.key});
+  final hintText;
+  const InputTextField({super.key, required this.hintText});
 
   @override
   // ignore: library_private_types_in_public_api
@@ -9,6 +10,13 @@ class InputTextField extends StatefulWidget {
 }
 
 class _InputTextField extends State<InputTextField> {
+  String hintText = "";
+  void initState() {
+    super.initState();
+
+    hintText = widget.hintText;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -23,10 +31,10 @@ class _InputTextField extends State<InputTextField> {
             Radius.circular(15),
           ),
         ),
-        child: const TextField(
+        child: TextField(
           decoration: InputDecoration(
             border: InputBorder.none,
-            hintText: 'test',
+            hintText: hintText,
           ),
         ),
       ),

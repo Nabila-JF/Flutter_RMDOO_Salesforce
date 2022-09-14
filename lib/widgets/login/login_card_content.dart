@@ -32,8 +32,12 @@ class LoginCardContent extends StatelessWidget {
                 ),
               ),
             ),
-            const InputTextField(),
-            const InputTextField(),
+            const InputTextField(
+              hintText: "Username",
+            ),
+            const InputTextField(
+              hintText: "Password",
+            ),
             const LoginButton(),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
