@@ -16,7 +16,7 @@ class DefaultSubPagesAppBar extends StatelessWidget with PreferredSizeWidget {
         padding: const EdgeInsets.all(8.0),
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: Colors.white.withOpacity(0.8),
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(

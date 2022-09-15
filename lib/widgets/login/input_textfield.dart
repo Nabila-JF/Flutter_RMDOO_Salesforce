@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class InputTextField extends StatefulWidget {
+  // ignore: prefer_typing_uninitialized_variables
   final hintText;
   const InputTextField({super.key, required this.hintText});
 
@@ -11,6 +12,7 @@ class InputTextField extends StatefulWidget {
 
 class _InputTextField extends State<InputTextField> {
   String hintText = "";
+  @override
   void initState() {
     super.initState();
 

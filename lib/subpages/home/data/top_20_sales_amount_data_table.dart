@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TransactionMonthlyDataTable extends StatelessWidget {
-  const TransactionMonthlyDataTable({super.key});
+class Top20SalesAmountDataTable extends StatelessWidget {
+  const Top20SalesAmountDataTable({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class TransactionMonthlyDataTable extends StatelessWidget {
         DataColumn(
           label: Expanded(
             child: Text(
-              "SALDO",
+              "PRODUCT",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Color(0xff242F9B),
@@ -33,7 +33,7 @@ class TransactionMonthlyDataTable extends StatelessWidget {
         DataColumn(
           label: Expanded(
             child: Text(
-              "NOMINAL",
+              "AMOUNT",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Color(0xff242F9B),
@@ -46,34 +46,13 @@ class TransactionMonthlyDataTable extends StatelessWidget {
         DataRow(
           cells: [
             DataCell(
-              Expanded(
-                child: Text(
-                  "1.",
-                  style: TextStyle(
-                    color: Color(0xff242F9B),
-                  ),
-                ),
-              ),
+              Text(''),
             ),
             DataCell(
-              Expanded(
-                child: Text(
-                  "CASH",
-                  style: TextStyle(
-                    color: Color(0xff242F9B),
-                  ),
-                ),
-              ),
+              Text(''),
             ),
             DataCell(
-              Expanded(
-                child: Text(
-                  "0",
-                  style: TextStyle(
-                    color: Color(0xff242F9B),
-                  ),
-                ),
-              ),
+              Text(''),
             ),
           ],
         )

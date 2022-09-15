@@ -1,3 +1,4 @@
+import 'package:rmdoo_salesforce/subpages/home/top_20_sales_amount.dart';
 import 'package:rmdoo_salesforce/subpages/home/transaction_monthly.dart';
 
 import '../../subpages/home/credit_limit.dart';
@@ -33,9 +34,9 @@ var homeMenuList = [
   ),
   // Top 20 Sales Amount
   IconModel(
-    iconImagePath: 'assets/images/home/growth-chart.png',
-    iconText: 'Top 20 Sales Amount',
-  ),
+      iconImagePath: 'assets/images/home/growth-chart.png',
+      iconText: 'Top 20 Sales Amount',
+      route: const Top20SalesAmount()),
   // Top 20 Sales Quantity
   IconModel(
     iconImagePath: 'assets/images/home/shopping-basket.png',

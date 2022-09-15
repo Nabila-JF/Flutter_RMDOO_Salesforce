@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rmdoo_salesforce/main_screen.dart';
 
 import 'login_screen.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
-      home: const LoginScreen(),
+      home: const MainScreen(),
     );
   }
 }
