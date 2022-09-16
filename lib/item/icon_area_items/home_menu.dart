@@ -1,3 +1,4 @@
+import 'package:rmdoo_salesforce/subpages/home/barcode_stock_checking.dart';
 import 'package:rmdoo_salesforce/subpages/home/top_20_sales_amount.dart';
 import 'package:rmdoo_salesforce/subpages/home/top_20_sales_quantity.dart';
 import 'package:rmdoo_salesforce/subpages/home/transaction_monthly.dart';
@@ -32,6 +33,7 @@ var homeMenuList = [
   IconModel(
     iconImagePath: 'assets/images/home/barcode-scan.png',
     iconText: 'Barcode Stock Checking',
+    route: const QrCode(),
   ),
   // Top 20 Sales Amount
   IconModel(
