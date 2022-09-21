@@ -1,4 +1,5 @@
 import 'package:rmdoo_salesforce/subpages/home/barcode_stock_checking.dart';
+import 'package:rmdoo_salesforce/subpages/home/sales_shipment_inquiry.dart';
 import 'package:rmdoo_salesforce/subpages/home/top_20_sales_amount.dart';
 import 'package:rmdoo_salesforce/subpages/home/top_20_sales_quantity.dart';
 import 'package:rmdoo_salesforce/subpages/home/transaction_monthly.dart';
@@ -53,6 +54,7 @@ var homeMenuList = [
   IconModel(
     iconImagePath: 'assets/images/home/delivery-truck.png',
     iconText: 'Sales Shipment Inquiry',
+    route: const SalesShipmentInquiry(),
   ),
   // Sales Order Inquiry
   IconModel(
