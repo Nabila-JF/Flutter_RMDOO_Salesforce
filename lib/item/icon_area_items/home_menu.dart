@@ -2,6 +2,7 @@ import 'package:rmdoo_salesforce/subpages/home/barcode_stock_checking.dart';
 import 'package:rmdoo_salesforce/subpages/home/top_20_sales_amount.dart';
 import 'package:rmdoo_salesforce/subpages/home/top_20_sales_quantity.dart';
 import 'package:rmdoo_salesforce/subpages/home/transaction_monthly.dart';
+import 'package:rmdoo_salesforce/subpages/home/transaction_yearly.dart';
 
 import '../../subpages/home/credit_limit.dart';
 import '../icon_model.dart';
@@ -22,7 +23,8 @@ var homeMenuList = [
   // transaction Yearly
   IconModel(
     iconImagePath: 'assets/images/home/moneyyear.png',
-    iconText: 'transaction Yearly',
+    iconText: 'Transaction Yearly',
+    route: const TransactionYearly(),
   ),
   // Point and Deposit
   IconModel(
