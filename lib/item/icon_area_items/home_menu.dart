@@ -1,4 +1,5 @@
 import 'package:rmdoo_salesforce/subpages/home/barcode_stock_checking.dart';
+import 'package:rmdoo_salesforce/subpages/home/sales_order_inquiry_data_table.dart';
 import 'package:rmdoo_salesforce/subpages/home/sales_shipment_inquiry.dart';
 import 'package:rmdoo_salesforce/subpages/home/top_20_sales_amount.dart';
 import 'package:rmdoo_salesforce/subpages/home/top_20_sales_quantity.dart';
@@ -60,5 +61,6 @@ var homeMenuList = [
   IconModel(
     iconImagePath: 'assets/images/home/clipboard.png',
     iconText: 'Sales Order Inquiry',
+    route: const SalesOrderInquiry(),
   ), // Sales Order Inquiry
 ];
