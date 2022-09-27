@@ -29,6 +29,7 @@ class ProductCategoriesItem extends StatelessWidget {
       ),
 
       child: Card(
+        shadowColor: Colors.transparent,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
