@@ -16,18 +16,57 @@ class ProductCategoriesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: Column(
-      children: [
-        Image.asset(imagePath, height: 50, width: 50),
-        AutoSizeText(
-          numberProduct,
-          style: TextStyle(fontSize: 10),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFF242F9B).withOpacity(0.15),
+            spreadRadius: 0,
+            blurRadius: 5,
+            offset: const Offset(0, 0), // changes position of shadow
+          ),
+        ],
+      ),
+
+      child: Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
         ),
-        AutoSizeText(
-          title,
-          style: TextStyle(fontSize: 10),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 8.0),
+          child: Column(
+            children: [
+              Image.asset(imagePath, height: 130, width: 130),
+              AutoSizeText(
+                numberProduct,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  overflow: TextOverflow.clip,
+                  fontSize: 10.5,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFF242F9B),
+                ),
+                maxLines: 2,
+                minFontSize: 8,
+                overflow: TextOverflow.ellipsis,
+              ),
+              AutoSizeText(
+                title,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  overflow: TextOverflow.clip,
+                  fontSize: 10.5,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFF242F9B),
+                ),
+                maxLines: 2,
+                minFontSize: 8,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ],
+          ),
         ),
-      ],
-    ));
+      ),
+    );
   }
 }

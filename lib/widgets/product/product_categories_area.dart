@@ -30,21 +30,29 @@ class ProductCategoriesArea extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-            const Padding(
-              padding: EdgeInsets.only(left: 20),
-              child: AutoSizeText(
-                "Product Categories",
-                style: TextStyle(
-                    color: Color(0xFF242F9B),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Padding(
+                padding: EdgeInsets.only(left: 20),
+                child: AutoSizeText(
+                  "Product Categories",
+                  style: TextStyle(
+                      color: Color(0xFF242F9B),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22),
+                ),
               ),
-            ),
-            Image.asset("assets/images/product/discount-icon.png", scale: 2)
-          ]),
+              Image.asset("assets/images/product/discount-icon.png", scale: 2)
+            ],
+          ),
           ImageSlider(),
-          ProductAreaList(productList: productCategoriesList),
+          Expanded(
+            child: Container(
+              height: MediaQuery.of(context).size.height,
+                child: ProductAreaList(productList: productCategoriesList),
+            ),
+          )
         ],
       ),
     );
