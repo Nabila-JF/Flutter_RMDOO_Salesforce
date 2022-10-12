@@ -13,7 +13,7 @@ class ProductAreaList extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.count(
       crossAxisCount: 2,
-      mainAxisSpacing: 10,
+      mainAxisSpacing: 8,
       scrollDirection: Axis.vertical,
       children: productList.map(
         (product) {

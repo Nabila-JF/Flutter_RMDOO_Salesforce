@@ -15,7 +15,7 @@ class _ImageSLiderState extends State<ImageSlider> {
   final List<Widget> myData = [
     Container(
       decoration: BoxDecoration(
-        color: Colors.indigo[300],
+        color: Color(0xFF242F9B),
         borderRadius: const BorderRadius.all(
           Radius.circular(25),
         ),
@@ -23,7 +23,7 @@ class _ImageSLiderState extends State<ImageSlider> {
     ),
     Container(
       decoration: BoxDecoration(
-        color: Colors.lightGreenAccent,
+        color: Color(0xFF646FD4),
         borderRadius: const BorderRadius.all(
           Radius.circular(25),
         ),
@@ -31,7 +31,7 @@ class _ImageSLiderState extends State<ImageSlider> {
     ),
     Container(
       decoration: BoxDecoration(
-        color: Colors.red,
+        color: Color(0xFF9BA3EB),
         borderRadius: const BorderRadius.all(
           Radius.circular(25),
         ),
@@ -49,6 +49,7 @@ class _ImageSLiderState extends State<ImageSlider> {
           carouselController: _controller,
           options: CarouselOptions(
               autoPlay: true,
+              autoPlayInterval: Duration(seconds: 3),
               enlargeCenterPage: true,
               aspectRatio: 2.25,
               onPageChanged: (index, reason) {

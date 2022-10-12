@@ -50,7 +50,7 @@ class ProductCategoriesArea extends StatelessWidget {
           Expanded(
             child: Container(
               height: MediaQuery.of(context).size.height,
-                child: ProductAreaList(productList: productCategoriesList),
+              child: ProductAreaList(productList: productCategoriesList),
             ),
           )
         ],
