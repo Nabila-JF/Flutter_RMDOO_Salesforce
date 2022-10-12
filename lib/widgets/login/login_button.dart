@@ -27,7 +27,7 @@ class _LoginButton extends State<LoginButton> {
         height: MediaQuery.of(context).size.height * 0.065,
         width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
-          color: Color(0xFFA8ACD7),
+          color: Color.fromARGB(255, 114, 126, 252),
           borderRadius: BorderRadius.all(
             Radius.circular(15),
           ),

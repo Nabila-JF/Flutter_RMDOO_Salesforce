@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:rmdoo_salesforce/widgets/login/dropdown.dart';
 import 'package:rmdoo_salesforce/widgets/login/input_textfield.dart';
 import 'package:rmdoo_salesforce/widgets/login/login_button.dart';
 
@@ -38,6 +39,7 @@ class LoginCardContent extends StatelessWidget {
             const InputTextField(
               hintText: "Password",
             ),
+            const DropOffice(),
             const LoginButton(),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

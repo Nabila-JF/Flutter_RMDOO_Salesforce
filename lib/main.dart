@@ -11,11 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Salesforce RMDOO',
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
-      home: const MainScreen(),
+      home: const LoginScreen(),
     );
   }
 }
